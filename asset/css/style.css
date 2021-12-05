@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'Byekan';
+    src: url(../fonts/BYekan-webfont.eot) format('eot'),
+    url(../fonts/BYekan-webfont.woff) format('woff'),
+        url(../fonts/BYekan-webfont.ttf) format('truetype');
+        font-weight: normal;
+        font-style: normal;
+}
+
+*{
+    font-family: 'Byekan';
+    direction: rtl;
+    text-align: right;
+}
+nav .sidenav-trigger {
+
+    float: right;
+    
+}
+
+
+
+@media(min-width:992px){
+    nav .brand-logo{
+        right: unset !important;
+        left: 0.5rem !important;
+    }
+}
