@@ -55,13 +55,76 @@ nav .brand-logo img{
     height: 100%;
 }
 .tabs-content.carousel.carousel-slider{
-    height: calc(100vh - 64px) !important
-    ;
+    height: calc(100vh - 64px) !important;
     /*100vh yani kole safhle va 64px size navbar ast ...intori dg scroll nmikhore*/
     width: 100% ;
 
 }
+.fixed-action-btn{
+    right: unset !important;
+}
 
+.floating-quick-access{
+    position: relative;   /*yani nesbat b hamin jaii k hast */
+    right: 5px;
+    bottom: -15px ;
+}
+
+.menu-links-desktop::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #ffa000 ;
+    display: block;
+    position: relative;
+    bottom: 10px;
+    transform: scalex(0);
+    transition: all 200ms ease;
+}
+.menu-links-desktop:hover::after{
+    transform: scalex(1);
+}
+.menu-links-desktop.active::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #ffa000 ;
+    display: block;
+    position: relative;
+    bottom: 10px;
+    transform: scalex(1);
+}
+
+.item_content{
+    background: rgb(0,0,0);
+    background: linear-gradient(183deg, rgba(0,0,0,1) 0%, rgba(255,160,0,1) 0%, rgba(230,81,0,1) 100%);
+}
+
+.px_4{
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+}
+
+.p_1{
+    padding: 1rem !important;
+}
+
+.main-form{
+    background: rgba(255, 234, 41, 0.671);
+    border-radius: 1.5rem;
+    padding: 1rem;
+    backdrop-filter: blur(3px);
+    box-shadow: 0 0 5px black;
+}
+
+
+
+@media(min-width:601px) {
+    .px_md_5{
+    padding-left: 5rem !important;
+    padding-right: 5rem !important;
+    }
+}
 
 @media(min-width:992px){
 

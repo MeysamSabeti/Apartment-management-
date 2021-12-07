@@ -15,17 +15,17 @@
 
 <!--header start --------------------------------------------------------------->
 <div class="navbar-fixed">
-  <nav class="orange darken-4">
+  <nav class="amber darken-4">
       <a href="#!" class="brand-logo">
         <img src="./asset/img/logo.png" alt="logo">
       </a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa fa-bars"></i></a>
       <ul class=" navbar-ui right hide-on-med-and-down main_ui_navbar">
-        <li class="tab"><a href="#content1">داشبورد</a></li>
-        <li class="tab"><a href="#content2">مدیریت مخارج</a></li>
-        <li class="tab"><a href="#content3">افزودن هزینه</a></li>
-        <li class="tab"><a href="#content4">مدیریت همسایگان</a></li>
-        <li class="tab"><a href="#content5">پیام ها </a></li>
+        <li class="tab"><a class="menu-item-list menu-links-desktop" href="#content1">داشبورد</a></li>
+        <li class="tab"><a class="menu-item-list menu-links-desktop active" href="#content2">افزودن همسایه</a></li>
+        <li class="tab"><a class="menu-item-list menu-links-desktop" href="#content3">مدیریت همسایگان</a></li>
+        <li class="tab"><a class="menu-item-list menu-links-desktop" href="#content4">افزودن هزینه</a></li>
+        <li class="tab"><a class="menu-item-list menu-links-desktop" href="#content5">پیام ها </a></li>
       </ul>
     </nav>
   </div>
@@ -38,24 +38,59 @@
     <li class="tab"><a href="#content5">پیام ها </a></li>
   </ul>
 <!--header end ----------------------------------------------------------------->
-    <div  id="content1" class="item_content orange"></div>
-    <div  id="content2" class="item_content yellow"></div>
+
+<!-- sections start ----------------------------------------------- -->
+  
     <div  id="content3" class="item_content red"></div>
     <div  id="content4" class="item_content purple"></div>
     <div  id="content5" class="item_content green"></div>
-  <!-- floating action button start-----------------------------------------------       -->
-  <div class="fixed-action-btn">
-    <a class="btn-floating btn-large red">
-      <i class="large material-icons">mode_edit</i>
+
+<!-- sections end ----------------------------------------------- -->
+
+<!-- floating action button (quick menu) start-----------------------------------------------       -->
+
+  <div class="fixed-action-btn toolbar hide-on-med-and-up">
+    <a class="btn-floating btn-large orange darken-4 floating-quick-access">
+      <i class="large fas fa-bars"></i>
     </a>
     <ul>
-      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+      <li class="quic-access-items" ><a class="btn-floating"><i class=" fas fa-user-plus"></i></a></li>
+      <li class="quic-access-items" ><a class="btn-floating"><i class=" fas fa-users"></i></a></li>
+      <li class="quic-access-items" ><a class="btn-floating"><i class=" fas fa-money-bill-wave"></i></a></li>
+      <li class="quic-access-items" ><a class="btn-floating"><i class=" fas fa-envelope "></i></a></li>
     </ul>
   </div>
-  <!-- floating action button end-----------------------------------------------         -->
+
+<!-- floating action button (quick menu) end-----------------------------------------------         -->
+
+<!-- dashboard ------------------------------------------------------------------- -->
+<div  id="content1" class="item_content ">
+  <div class="row">
+    <div class="col s12 m6 l4 progressbar_gride px_4 px_md_5">
+      <span class="white-text">
+        <svg viewbox="0 0 100 100" style="filter: drop-shadow(0 0 5px black);">
+          <circle cx="50" cy="50" r="45" fill="rgba(255,255,255,0.8)" />
+            <path id="payProgressPath" fill="none" stroke-linecap="round" stroke-width="6" stroke="#e65100  "
+              stroke-dasharray="126.5 , 126.5"
+              d="M50 10
+                a 40 40 0 0 1 0 80
+                a 40 40 0 0 1 0 -80"
+            />
+              <text id="payProgressText" x="50" y="35" fill="#e65100  " text-anchor="middle" dy="7" font-size="20">50%</text>
+              <text x="50" y="55" fill="#e65100  " text-anchor="middle" dy="7" font-size="10">پرداخت</text>
+        </svg>
+      </span>
+    </div>
+  </div>
+</div>
+<!-- dashboard ------------------------------------------------------------------- -->
+
+
+<!-- add person -------------------------------------------------------- -->
+
+<div  id="content2" class="item_content active"></div>
+
+<!-- add person -------------------------------------------------------- -->
 
 
     <script src="./materialize/js/materialize.min.js"></script>
