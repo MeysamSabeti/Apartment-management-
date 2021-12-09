@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./asset/fontawesome/css/all.css">
     <link rel="stylesheet" href="./asset/css/style.css">
 
-    <title>مدیریت ساختمان</title>
+    <title>مدیریت آپارتمان</title>
 </head>
 <body dir="rtl">
 
@@ -42,7 +42,7 @@
 <!-- floating action button (quick menu) start-----------------------------------------------       -->
 
   <div class="fixed-action-btn toolbar hide-on-med-and-up">
-    <a class="btn-floating btn-large orange darken-4 floating-quick-access">
+    <a class="btn-floating btn-large orange  darken-3 floating-quick-access">
       <i class="large fas fa-bars"></i>
     </a>
     <ul>
@@ -58,7 +58,8 @@
 <!-- dashboard ------------------------------------------------------------------- -->
 <div  id="content1" class="item_content ">
   <div class="row">
-    <div class="col s12 m6 l4 progressbar_gride px_4 px_md_5">
+    <p class=" title_dashboard center white-text" > سایت مدیریت آپارتمان </p>
+    <div class="col s12 m4 l4 progressbar_gride px_4 px_md_5">
       <span class="white-text">
         <svg viewbox="0 0 100 100" style="filter: drop-shadow(0 0 5px black);">
           <circle cx="50" cy="50" r="45" fill="rgba(255,255,255,0.8)" />
@@ -68,27 +69,45 @@
                 a 40 40 0 0 1 0 80
                 a 40 40 0 0 1 0 -80"
             />
-              <text id="payProgressText" x="50" y="35" fill="#e65100  " text-anchor="middle" dy="7" font-size="20">50%</text>
-              <text x="50" y="55" fill="#e65100  " text-anchor="middle" dy="7" font-size="10">پرداخت</text>
+              <text id="payProgressText" x="50" y="35" fill="#e65100  " text-anchor="middle" dy="7" font-size="20">91%</text>
+              <text x="50" y="55" fill="#e65100  " text-anchor="middle" dy="7" font-size="10"> پرداخت ها</text>
         </svg>
       </span>
     </div>
 
-    <div class="col s12 m6 l4 progressbar_gride px_4 px_md_5">
+    <div class="col s12 m4 l4 progressbar_gride px_4 px_md_5">
       <span class="white-text">
         <svg viewbox="0 0 100 100" style="filter: drop-shadow(0 0 5px black);">
           <circle cx="50" cy="50" r="45" fill="rgba(255,255,255,0.8)" />
-            <path id="floorProgressPath" fill="none" stroke-linecap="round" stroke-width="6" stroke="#e65100  "
+            <path id="rentalProgressText" fill="none" stroke-linecap="round" stroke-width="6" stroke="#e65100  "
               stroke-dasharray="126.5 , 126.5"
               d="M50 10
                 a 40 40 0 0 1 0 80
                 a 40 40 0 0 1 0 -80"
             />
-              <text id="floorProgressText" x="50" y="35" fill="#e65100  " text-anchor="middle" dy="7" font-size="20">91%</text>
-              <text x="50" y="55" fill="#e65100  " text-anchor="middle" dy="7" font-size="10">واحد های خالی</text>
+              <text id="rentalProgressText" x="50" y="35" fill="#e65100  " text-anchor="middle" dy="7" font-size="20">43%</text>
+              <text x="50" y="55" fill="#e65100  " text-anchor="middle" dy="7" font-size="10">واحد های اجاره ای</text>
         </svg>
       </span>
     </div>
+
+    <div class="col s12 m4 l4 progressbar_gride px_4 px_md_5">
+      <span class="white-text">
+        <svg viewbox="0 0 100 100" style="filter: drop-shadow(0 0 5px black);">
+          <circle cx="50" cy="50" r="45" fill="rgba(255,255,255,0.8)" />
+            <path id="saleProgressText" fill="none" stroke-linecap="round" stroke-width="6" stroke="#e65100  "
+              stroke-dasharray="126.5 , 126.5"
+              d="M50 10
+                a 40 40 0 0 1 0 80
+                a 40 40 0 0 1 0 -80"
+            />
+              <text id="saleProgressText" x="50" y="35" fill="#e65100  " text-anchor="middle" dy="7" font-size="20">21%</text>
+              <text x="50" y="55" fill="#e65100  " text-anchor="middle" dy="7" font-size="10">برای فروش</text>
+        </svg>
+      </span>
+    </div>
+
+    
   </div>
 </div>
 <!-- dashboard ------------------------------------------------------------------- -->

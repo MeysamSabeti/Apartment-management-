@@ -38,8 +38,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     //........................................................................................................
     //animation progressbar
-    animationProgress ('payProgressPath','payProgressText' ,48)
-    animationProgress ('floorProgressPath','floorProgressText' ,91)
+    animationProgress ('payProgressPath','payProgressText' ,91)
+    animationProgress ('rentalProgressText','rentalProgressText' ,43)
+    animationProgress ('saleProgressText','saleProgressText' ,21)
+
 
     function animationProgress (pathDomId,textDomId ,percent){
         let startPercent = 0;      //baze namayesh darsad
