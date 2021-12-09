@@ -87,6 +87,10 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     })
 
+    //...................................................................................
+    //messages
+    var collapsibleElem = document.querySelectorAll('.collapsible');
+    M.Collapsible.init(collapsibleElem , {});
 
 
 
