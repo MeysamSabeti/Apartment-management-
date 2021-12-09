@@ -96,8 +96,10 @@ nav .brand-logo img{
 }
 
 .item_content{
-    background: rgb(0,0,0);
+    /* background: rgb(0,0,0); */
     background: linear-gradient(to right, #fc4a1a, #f7b733);;
+    background:linear-gradient(to right, rgba(252, 74, 26, 0.6), rgba(247, 183, 51,0.6)) , url(../img/bulding.jpg) ;
+
     overflow-y: auto;
 }
 .carousel.carousel-slider .carousel-item p.title_dashboard{
