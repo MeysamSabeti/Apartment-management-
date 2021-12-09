@@ -66,9 +66,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     }
 
-    //...................................................................................quick menu
+    //...................................................................................
+    //sabr hamsaye jadid
 
-    
+    var selectElem = document.querySelectorAll('select');
+    M.FormSelect.init(selectElem, {});
+
+
 
 
 

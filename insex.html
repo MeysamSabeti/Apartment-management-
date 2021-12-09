@@ -81,6 +81,22 @@
         </svg>
       </span>
     </div>
+
+    <div class="col s12 m6 l4 progressbar_gride px_4 px_md_5">
+      <span class="white-text">
+        <svg viewbox="0 0 100 100" style="filter: drop-shadow(0 0 5px black);">
+          <circle cx="50" cy="50" r="45" fill="rgba(255,255,255,0.8)" />
+            <path id="floorProgressPath" fill="none" stroke-linecap="round" stroke-width="6" stroke="#e65100  "
+              stroke-dasharray="126.5 , 126.5"
+              d="M50 10
+                a 40 40 0 0 1 0 80
+                a 40 40 0 0 1 0 -80"
+            />
+              <text id="floorProgressText" x="50" y="35" fill="#e65100  " text-anchor="middle" dy="7" font-size="20">91%</text>
+              <text x="50" y="55" fill="#e65100  " text-anchor="middle" dy="7" font-size="10">واحد های خالی</text>
+        </svg>
+      </span>
+    </div>
   </div>
 </div>
 <!-- dashboard ------------------------------------------------------------------- -->
@@ -88,7 +104,150 @@
 
 <!-- add person -------------------------------------------------------- -->
 
-<div  id="content2" class="item_content active"></div>
+<div  id="content2" class="item_content active">
+  <div class="row p_1">
+    <form action="POST" class="main-form col s12 m6 l4">
+      <h5 class="center-align deep-orange-text text-darken-4" >ثبت همسایه جدید</h5>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="name" type="text" class="validate">
+          <label class="teal-text text-darken-4" for="name">نام و نام خانوادگی</label>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="phone" type="text" class="validate">
+          <label class="teal-text text-darken-4" for="phone">تماس</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="count" type="text" class="validate">
+          <label class="teal-text text-darken-4" for="count">تعداد</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <select>
+            <option value="">انتخاب کنید...</option>
+            <option value="1">طبقه 1</option>
+            <option value="2">طبقه 2</option>
+            <option value="3">طبقه 3</option>
+            <option value="4">طبقه 4</option>
+          </select>
+          <label class="teal-text text-darken-4">طبقه</label>
+        </div>
+        <div class="input-field col s6">
+          <select>
+            <option value="">انتخاب کنید...</option>
+            <option value="1">واحد 1</option>
+            <option value="2">واحد 2</option>
+            <option value="3">واحد 3</option>
+            <option value="4">واحد 4</option>
+          </select>
+          <label class="teal-text text-darken-4">واحد</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s4">
+          <p>
+            <label>
+              <input type="checkbox" />
+              <span>ساکن</span>
+            </label>
+          </p>
+        </div>
+        <div class="input-field col s4">
+          <p>
+            <label>
+              <input name="group1" type="radio" checked />
+              <span>مالک</span>
+            </label>
+          </p>  
+        </div>
+        <div class="input-field col s4">
+          <p>
+            <label>
+              <input name="group1" type="radio" checked />
+              <span>مستاجر</span>
+            </label>
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s4">
+          <select>
+            <option value="1"> 1</option>
+            <option value="2"> 2</option>
+            <option value="3"> 3</option>
+            <option value="4"> 4</option>
+            <option value="5"> 5</option>
+            <option value="6"> 6</option>
+            <option value="7"> 8</option>
+            <option value="7"> 9</option>
+            <option value="7"> 10</option>
+            <option value="7"> 11</option>
+            <option value="7"> 12</option>
+            <option value="7"> 13</option>
+            <option value="7"> 14</option>
+            <option value="7"> 15</option>
+            <option value="7"> 16</option>
+            <option value="7"> 17</option>
+            <option value="7"> 18</option>
+            <option value="7"> 19</option>
+            <option value="7"> 20</option>
+            <option value="7"> 21</option>
+            <option value="7"> 22</option>
+            <option value="7"> 23</option>
+            <option value="7"> 24</option>
+            <option value="7"> 25</option>
+            <option value="7"> 26</option>
+            <option value="7"> 27</option>
+            <option value="7"> 28</option>
+            <option value="7"> 29</option>
+            <option value="7"> 30</option>
+          </select>
+          <label class="teal-text text-darken-4">روز</label>
+        </div>
+        <div class="input-field col s4">
+          <select>
+            <option value="1"> فروردین</option>
+            <option value="2"> اردیبهشت</option>
+            <option value="3"> خرداد</option>
+            <option value="4"> تیر</option>
+            <option value="5"> مرداد</option>
+            <option value="6"> شهریور</option>
+            <option value="7"> مهر</option>
+          </select>
+          <label class="teal-text text-darken-4">ماه</label>
+        </div>
+        <div class="input-field col s4">
+          <select>
+            <option value="1394"> 1394</option>
+            <option value="1395"> 1395</option>
+            <option value="1396"> 1396</option>
+            <option value="1397"> 1397</option>
+            <option value="1398"> 1398</option>
+            <option value="1399"> 1399</option>
+            <option value="1400"> 1400</option>
+          </select>
+          <label class="teal-text text-darken-4">سال</label>
+        </div>
+      </div>
+
+      <div class="center-align">
+        <button class="btn waves-effect waves-light red darken-4" type="button" name="action">ثبت
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+
+
+    </form>
+  </div>
+</div>
+
 
 <!-- add person -------------------------------------------------------- -->
 

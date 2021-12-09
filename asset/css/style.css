@@ -112,11 +112,19 @@ nav .brand-logo img{
 .main-form{
     background: rgba(255, 234, 41, 0.671);
     border-radius: 1.5rem;
-    padding: 1rem;
+    padding: 1rem !important;
     backdrop-filter: blur(3px);
     box-shadow: 0 0 5px black;
 }
 
+.main-form .row{
+    margin-bottom: 1px !important;
+}
+
+.main-form input{
+    font-family: 'Byekan';
+    font-size: 0.9rem;
+}
 
 
 @media(min-width:601px) {
