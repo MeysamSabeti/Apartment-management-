@@ -22,9 +22,9 @@
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa fa-bars"></i></a>
       <ul class=" navbar-ui right hide-on-med-and-down main_ui_navbar">
         <li class="tab"><a class="menu-item-list menu-links-desktop" href="#content1">داشبورد</a></li>
-        <li class="tab"><a class="menu-item-list menu-links-desktop active" href="#content2">افزودن همسایه</a></li>
-        <li class="tab"><a class="menu-item-list menu-links-desktop" href="#content3">مدیریت همسایگان</a></li>
-        <li class="tab"><a class="menu-item-list menu-links-desktop" href="#content4">افزودن هزینه</a></li>
+        <li class="tab"><a class="menu-item-list menu-links-desktop " href="#content2">افزودن همسایه</a></li>
+        <li class="tab"><a class="menu-item-list menu-links-desktop " href="#content3">مدیریت همسایگان</a></li>
+        <li class="tab"><a class="menu-item-list menu-links-desktop active" href="#content4">افزودن هزینه</a></li>
         <li class="tab"><a class="menu-item-list menu-links-desktop" href="#content5">پیام ها </a></li>
       </ul>
     </nav>
@@ -32,17 +32,15 @@
 
   <ul class=" sidenav main_ui_navbar" id="mobile-demo">
     <li class="tab"><a href="#content1">داشبورد</a></li>
-    <li class="tab"><a href="#content2">مدیریت مخارج</a></li>
-    <li class="tab"><a href="#content3">افزودن هزینه</a></li>
-    <li class="tab"><a href="#content4">مدیریت همسایگان</a></li>
+    <li class="tab"><a href="#content2">افزودن همسایه</a></li>
+    <li class="tab"><a href="#content3">مدیریت همسایگان</a></li>
+    <li class="tab"><a href="#content4">افزودن هزینه</a></li>
     <li class="tab"><a href="#content5">پیام ها </a></li>
   </ul>
 <!--header end ----------------------------------------------------------------->
 
 <!-- sections start ----------------------------------------------- -->
   
-    <div  id="content3" class="item_content red"></div>
-    <div  id="content4" class="item_content purple"></div>
     <div  id="content5" class="item_content green"></div>
 
 <!-- sections end ----------------------------------------------- -->
@@ -102,11 +100,14 @@
 <!-- dashboard ------------------------------------------------------------------- -->
 
 
-<!-- add person -------------------------------------------------------- -->
+<!-- add Neighbor -------------------------------------------------------- -->
 
-<div  id="content2" class="item_content active">
+<div  id="content2" class="item_content ">
   <div class="row p_1">
-    <form action="POST" class="main-form col s12 m6 l4">
+    
+    <div class="col m2 l3 hide-on-med-and-down"></div>  <!--baraye vst bodne form dar desktop-->
+
+    <form action="POST" class="main-form col s12 m8 l6">
       <h5 class="center-align deep-orange-text text-darken-4" >ثبت همسایه جدید</h5>
       <div class="row">
         <div class="input-field col s12">
@@ -245,11 +246,396 @@
 
 
     </form>
+  
+    <div class="col m2 l3 hide-on-med-and-down"></div>  <!--baraye vst bodne form dar desktop-->
+  
   </div>
 </div>
 
+<!-- add Neighbor -------------------------------------------------------- -->
 
-<!-- add person -------------------------------------------------------- -->
+<!--manage Neighbor start---------------------------------------------------------->
+
+<div  id="content3" class="item_content">
+  <div class="row p_1">
+    <div class="col s12">
+      <div class="main_talbe">
+        <h5 class="center-align cyan-text text-darken-4">مدیریت همسایگان</h5>
+        <table class="centered highlight responsive-table striped" >
+          <thead>
+            <tr>
+              <th>نام و نام خانوادگی</th>
+              <th>شماره تماس</th>
+              <th>تعداد اعضا</th>
+              <th>طبقه</th>
+              <th>واحد</th>
+              <th>وضعیت سکونت</th>
+              <th>وضعیت مالکیت</th>
+              <th>تاریخ سکونت</th>
+              <th>مانده بدهی</th>
+              <th>عملیات</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>میثم ثابتی</td>
+              <td>0922222222</td>
+              <td>2</td>
+              <td>+3</td>
+              <td>3</td>
+              <td>ساکن</td>
+              <td>مالک</td>
+              <td>3روز پیش</td>
+              <td>50،0000</td>
+              <td>
+                <i class="fas fa-trash-alt black-text" ></i>
+                <i class="fas fa-edit black-text" ></i>
+              </td>
+            </tr><tr>
+              <td>میثم ثابتی</td>
+              <td>0922222222</td>
+              <td>2</td>
+              <td>+3</td>
+              <td>3</td>
+              <td>ساکن</td>
+              <td>مالک</td>
+              <td>3روز پیش</td>
+              <td>50،0000</td>
+              <td>
+                <i class="fas fa-trash-alt black-text" ></i>
+                <i class="fas fa-edit black-text" ></i>
+              </td>
+            </tr><tr>
+              <td>میثم ثابتی</td>
+              <td>0922222222</td>
+              <td>2</td>
+              <td>+3</td>
+              <td>3</td>
+              <td>ساکن</td>
+              <td>مالک</td>
+              <td>3روز پیش</td>
+              <td>50،0000</td>
+              <td>
+                <i class="fas fa-trash-alt black-text" ></i>
+                <i class="fas fa-edit black-text" ></i>
+              </td>
+            </tr><tr>
+              <td>میثم ثابتی</td>
+              <td>0922222222</td>
+              <td>2</td>
+              <td>+3</td>
+              <td>3</td>
+              <td>ساکن</td>
+              <td>مالک</td>
+              <td>3روز پیش</td>
+              <td>50،0000</td>
+              <td>
+                <i class="fas fa-trash-alt black-text" ></i>
+                <i class="fas fa-edit black-text" ></i>
+              </td>
+            </tr><tr>
+              <td>میثم ثابتی</td>
+              <td>0922222222</td>
+              <td>2</td>
+              <td>+3</td>
+              <td>3</td>
+              <td>ساکن</td>
+              <td>مالک</td>
+              <td>3روز پیش</td>
+              <td>50،0000</td>
+              <td>
+                <i class="fas fa-trash-alt black-text" ></i>
+                <i class="fas fa-edit black-text" ></i>
+              </td>
+            </tr><tr>
+              <td>میثم ثابتی</td>
+              <td>0922222222</td>
+              <td>2</td>
+              <td>+3</td>
+              <td>3</td>
+              <td>ساکن</td>
+              <td>مالک</td>
+              <td>3روز پیش</td>
+              <td>50،0000</td>
+              <td>
+                <i class="fas fa-trash-alt black-text" ></i>
+                <i class="fas fa-edit black-text" ></i>
+              </td>
+            </tr><tr>
+              <td>میثم ثابتی</td>
+              <td>0922222222</td>
+              <td>2</td>
+              <td>+3</td>
+              <td>3</td>
+              <td>ساکن</td>
+              <td>مالک</td>
+              <td>3روز پیش</td>
+              <td>50،0000</td>
+              <td>
+                <i class="fas fa-trash-alt black-text" ></i>
+                <i class="fas fa-edit black-text" ></i>
+              </td>
+            </tr><tr>
+              <td>میثم ثابتی</td>
+              <td>0922222222</td>
+              <td>2</td>
+              <td>+3</td>
+              <td>3</td>
+              <td>ساکن</td>
+              <td>مالک</td>
+              <td>3روز پیش</td>
+              <td>50،0000</td>
+              <td>
+                <i class="fas fa-trash-alt black-text" ></i>
+                <i class="fas fa-edit black-text" ></i>
+              </td>
+            </tr><tr>
+              <td>میثم ثابتی</td>
+              <td>0922222222</td>
+              <td>2</td>
+              <td>+3</td>
+              <td>3</td>
+              <td>ساکن</td>
+              <td>مالک</td>
+              <td>3روز پیش</td>
+              <td>50،0000</td>
+              <td>
+                <i class="fas fa-trash-alt black-text" ></i>
+                <i class="fas fa-edit black-text" ></i>
+              </td>
+            </tr><tr>
+              <td>میثم ثابتی</td>
+              <td>0922222222</td>
+              <td>2</td>
+              <td>+3</td>
+              <td>3</td>
+              <td>ساکن</td>
+              <td>مالک</td>
+              <td>3روز پیش</td>
+              <td>50،0000</td>
+              <td>
+                <i class="fas fa-trash-alt black-text" ></i>
+                <i class="fas fa-edit black-text" ></i>
+              </td>
+            </tr><tr>
+              <td>میثم ثابتی</td>
+              <td>0922222222</td>
+              <td>2</td>
+              <td>+3</td>
+              <td>3</td>
+              <td>ساکن</td>
+              <td>مالک</td>
+              <td>3روز پیش</td>
+              <td>50،0000</td>
+              <td>
+                <i class="fas fa-trash-alt black-text" ></i>
+                <i class="fas fa-edit black-text" ></i>
+              </td>
+            </tr><tr>
+              <td>میثم ثابتی</td>
+              <td>0922222222</td>
+              <td>2</td>
+              <td>+3</td>
+              <td>3</td>
+              <td>ساکن</td>
+              <td>مالک</td>
+              <td>3روز پیش</td>
+              <td>50،0000</td>
+              <td>
+                <i class="fas fa-trash-alt black-text" ></i>
+                <i class="fas fa-edit black-text" ></i>
+              </td>
+            </tr><tr>
+              <td>میثم ثابتی</td>
+              <td>0922222222</td>
+              <td>2</td>
+              <td>+3</td>
+              <td>3</td>
+              <td>ساکن</td>
+              <td>مالک</td>
+              <td>3روز پیش</td>
+              <td>50،0000</td>
+              <td>
+                <i class="fas fa-trash-alt black-text" ></i>
+                <i class="fas fa-edit black-text" ></i>
+              </td>
+            </tr><tr>
+              <td>میثم ثابتی</td>
+              <td>0922222222</td>
+              <td>2</td>
+              <td>+3</td>
+              <td>3</td>
+              <td>ساکن</td>
+              <td>مالک</td>
+              <td>3روز پیش</td>
+              <td>50،0000</td>
+              <td>
+                <i class="fas fa-trash-alt black-text" ></i>
+                <i class="fas fa-edit black-text" ></i>
+              </td>
+            </tr><tr>
+              <td>میثم ثابتی</td>
+              <td>0922222222</td>
+              <td>2</td>
+              <td>+3</td>
+              <td>3</td>
+              <td>ساکن</td>
+              <td>مالک</td>
+              <td>3روز پیش</td>
+              <td>50،0000</td>
+              <td>
+                <i class="fas fa-trash-alt black-text" ></i>
+                <i class="fas fa-edit black-text" ></i>
+              </td>
+            </tr><tr>
+              <td>میثم ثابتی</td>
+              <td>0922222222</td>
+              <td>2</td>
+              <td>+3</td>
+              <td>3</td>
+              <td>ساکن</td>
+              <td>مالک</td>
+              <td>3روز پیش</td>
+              <td>50،0000</td>
+              <td>
+                <i class="fas fa-trash-alt black-text" ></i>
+                <i class="fas fa-edit black-text" ></i>
+              </td>
+            </tr><tr>
+              <td>میثم ثابتی</td>
+              <td>0922222222</td>
+              <td>2</td>
+              <td>+3</td>
+              <td>3</td>
+              <td>ساکن</td>
+              <td>مالک</td>
+              <td>3روز پیش</td>
+              <td>50،0000</td>
+              <td>
+                <i class="fas fa-trash-alt black-text" ></i>
+                <i class="fas fa-edit black-text" ></i>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--manage Neighbor end---------------------------------------------------------->
+
+<!-- added coasts start --------------------------------------------------------- -->
+
+<div  id="content4" class="item_content active">
+  <div class="row p_1">
+    <div class="col m2 l3 hide-on-small-and-down"></div>
+    <form class="main-form col s12 m8 l6">
+      <h5 class="center-align cyan-text text-darken-4">افزودن هزینه </h5>
+      <div class="row">
+        <div class="input-field col s12 ">
+          <select>
+            <option value="0">همه همسایه ها</option>
+            <option value="0">فقط مالکین</option>
+            <option value="0">فقط مستاجرین</option>
+            <option value="1">واحد 1</option>
+            <option value="2">واحد 2</option>
+            <option value="3">واحد 3</option>
+            <option value="4">واحد 4</option>
+            <option value="4">...</option>
+          </select>
+          <label class="teal-text text-darken-4">برای</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="text" id="autocomplete-input" class="autocomplete" autocomplete="off">
+          <label class="teal-text text-darken-4" for="autocomplete-input">بابت</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s12">
+          <input type="number" id="price" class="validate">
+          <label class="teal-text text-darken-4" for="price">به مبلغ</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <p>
+            <label>
+              <input name="group1" type="radio" checked />
+              <span>الزامی</span>
+            </label>
+          </p>  
+        </div>
+        <div class="input-field col s6">
+          <p>
+            <label>
+              <input name="group1" type="radio"/>
+              <span>اختیاری</span>
+            </label>
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="input-field col s4">
+          <select>
+            <option value="1"> 1</option>
+            <option value="2"> 2</option>
+            <option value="3"> 3</option>
+            <option value="4"> 4</option>
+            <option value="5"> 5</option>
+            <option value="6"> 6</option>
+            <option value="7"> 7</option>
+          </select>
+          <label class="teal-text text-darken-4">روز</label>
+        </div>
+        <div class="input-field col s4">
+          <select>
+            <option value="1"> فروردین</option>
+            <option value="2"> اردیبهشت</option>
+            <option value="3"> خرداد</option>
+            <option value="4"> تیر</option>
+            <option value="5"> مرداد</option>
+            <option value="6"> شهریور</option>
+            <option value="7"> مهر</option>
+          </select>
+          <label class="teal-text text-darken-4">ماه</label>
+        </div>
+        <div class="input-field col s4">
+          <select>
+            <option value="1394"> 1394</option>
+            <option value="1395"> 1395</option>
+            <option value="1396"> 1396</option>
+            <option value="1397"> 1397</option>
+            <option value="1398"> 1398</option>
+            <option value="1399"> 1399</option>
+            <option value="1400"> 1400</option>
+          </select>
+          <label class="teal-text text-darken-4">سال</label>
+        </div>
+      </div>
+
+      <div class="center-align">
+        <button class="btn waves-effect waves-light teal darken-4" type="button" name="action">ثبت
+          <i class="fas fa-paper-plane"></i>
+        </button>
+      </div>
+
+
+
+    </form>
+
+    <div class="col m2 l3 hide-on-small-and-down"></div>
+
+  </div>
+</div>
+
+<!-- added coasts end --------------------------------------------------------- -->
 
 
     <script src="./materialize/js/materialize.min.js"></script>

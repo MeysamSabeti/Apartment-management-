@@ -67,12 +67,25 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     //...................................................................................
-    //sabr hamsaye jadid
+    //sabt hamsaye jadid
 
     var selectElem = document.querySelectorAll('select');
     M.FormSelect.init(selectElem, {});
 
+    //...................................................................................
+    //afzodane hazine
 
+    var autoCompleteElem = document.querySelectorAll('.autocomplete');
+    M.Autocomplete.init(autoCompleteElem , {
+        data:{
+            "شارژ": null,
+            "آب مشاع": null,
+            "آب": null,
+            "برق مشاع": null,
+            "برق": null,
+            "گاز": null,  
+        }
+    })
 
 
 
